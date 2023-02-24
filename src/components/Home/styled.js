@@ -70,9 +70,6 @@ const HomeContainer = styled.section`
   align-items: center;
   /* justify-content:center; */
   
-  img {
-    width: 100%;
-  }
 
 }
 
