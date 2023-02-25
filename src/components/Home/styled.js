@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const HomeContainer = styled.section`
-  height: 85dvh;
+  height: 90dvh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 7em;
 
   @media (max-width: 560px) {
     grid-template-rows: 1fr 1fr;
@@ -12,7 +13,7 @@ const HomeContainer = styled.section`
 
   div#home-content {
 
-    padding-top:7em;
+
 
     .title-wrapper {
       width: 100%;
@@ -20,7 +21,7 @@ const HomeContainer = styled.section`
 
     h1 {
       color: ${(props) => props.theme.title};
-      font-size: 2em;
+      font-size: 3.1vw;
     
       overflow: hidden;
       
@@ -28,15 +29,13 @@ const HomeContainer = styled.section`
         color: ${(props) => props.theme.hightligth};
       }
 
-      @media (max-width: 560px) {
-        font-size: 1.5em;
-      }
+
     }
 
 
     p {
       color: ${(props) => props.theme.textColor};
-      font-size: 0.8em;
+      font-size: 1.3vw;
       margin-top: 1em;
 
       @media (max-width: 560px) {
@@ -66,9 +65,20 @@ const HomeContainer = styled.section`
 
 #home-image {
   
+  
+  width: 100%;
+  max-height: 150px;
+ 
   display: flex;
+  justify-content: right;
   align-items: center;
-  /* justify-content:center; */
+  
+  
+
+   svg {
+    min-width: 110% ;
+    
+  }
   
 
 }
