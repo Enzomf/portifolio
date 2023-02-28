@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
    main {
     width:100%;
    }
+
+   h2 {
+    color: ${props => props.theme.hightligth};
+    font-size: 2em;
+  }
    
 `;
 

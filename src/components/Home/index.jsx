@@ -1,12 +1,10 @@
-import { TypeAnimation } from 'react-type-animation';
 import Lottie from 'lottie-react';
-import { useLottie } from 'lottie-react';
-
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { HiOutlineMail, HiDocumentText } from 'react-icons/hi';
+import { HiDocumentText, HiOutlineMail } from 'react-icons/hi';
+import { TypeAnimation } from 'react-type-animation';
 
+import homeAnimatedSvg from '../../assets/home-animation.json';
 import { HomeContainer } from "./styled";
-import homeAnimatedSvg from '../../assets/portifolio.json';
 
 function Home() {
 
@@ -55,8 +53,11 @@ function Home() {
                 </div>
             </div>
 
-            <div id='home-image'>
-                <Lottie animationData={homeAnimatedSvg} height={300} />
+            <div id='home-image'
+
+            
+            >
+                <Lottie animationData={homeAnimatedSvg}  />
             </div>
 
         </HomeContainer>

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const HomeContainer = styled.section`
-  height: 90dvh;
+  /* min-height: 90dvh;
+  max-height: 90dvh; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 7em;
+  margin-top: 11em;
 
   @media (max-width: 560px) {
     grid-template-rows: 1fr 1fr;
@@ -12,7 +13,7 @@ const HomeContainer = styled.section`
   }
 
   div#home-content {
-
+    max-width: 100%;
 
 
     .title-wrapper {
@@ -21,7 +22,8 @@ const HomeContainer = styled.section`
 
     h1 {
       color: ${(props) => props.theme.title};
-      font-size: 3.1vw;
+      font-size:  clamp(1.2rem, 3vw, 5rem);
+      white-space:  nowrap;
     
       overflow: hidden;
       
@@ -35,23 +37,20 @@ const HomeContainer = styled.section`
 
     p {
       color: ${(props) => props.theme.textColor};
-      font-size: 1.3vw;
+      font-size: clamp(0.5rem, 1vw, 5rem);
       margin-top: 1em;
 
-      @media (max-width: 560px) {
-        font-size: 0.5em;
-      }
     }
 
 
     #social-media-wrapper {
       
       display: flex;
-      gap: 0.4em;
-      margin-top: 1em;
+      gap: 2em;
+      margin-top: 2em;
       
       svg {
-        font-size: 1.3em;
+        font-size: 2.3em;
         color: ${ props => props.theme.textColor};
         opacity: 0.6;
 
@@ -64,21 +63,13 @@ const HomeContainer = styled.section`
   }
 
 #home-image {
-  
-  
-  width: 100%;
-  max-height: 150px;
- 
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  
-  
-
-   svg {
-    min-width: 110% ;
-    
+  svg {
+    min-height: 100%;
+    transform: scale(1.3) !important;
   }
+
+
+ 
   
 
 }
