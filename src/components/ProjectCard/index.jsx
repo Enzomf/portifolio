@@ -2,12 +2,14 @@ import { useRef } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { BsFillLockFill } from 'react-icons/bs';
 import Tild from 'react-parallax-tilt';
+import { Link } from 'react-router-dom';
 
 import { CardContainer } from "./styled";
 
-function ProjectCard({ image, github, live, repoPrivate, details }){
+function ProjectCard({ image, github, live, repoPrivate, name, id }){
 
     const cardRef = useRef(null);
+    
 
    function handleMouseMove(e) {
        const position = cardRef.current.getBoundingClientRect();
@@ -21,12 +23,22 @@ function ProjectCard({ image, github, live, repoPrivate, details }){
       
    }
 
+   function handleDetailClick(){
+       cardRef.current.classList.add('active-detail');
+   }
+
 
     return (
-     <Tild tiltMaxAngleX={5} tiltMaxAngleY={5}>
+     
 
+      
+
+        
+     <Tild tiltMaxAngleX={5} tiltMaxAngleY={5}>
          <CardContainer ref={cardRef} onMouseMove={handleMouseMove}>
-                <img src={image} alt="sepedi-software" style={{margin:'0 auto'}} />
+                <span className='image-wrapper'>
+                <img src={image} alt={name} />
+                </span>
 
                 <div className="actions-wrapper" >
                     <button id='code'>
@@ -62,15 +74,14 @@ function ProjectCard({ image, github, live, repoPrivate, details }){
                         </a>
                     </button>
 
-                    <button id='details'>
-                        <span>
-                            details 
-                        </span>
+                    <button id='details' onClick={handleDetailClick}>
+                        <Link to={`/projects/${id}`}>details</Link>
                     </button>
                 </div>
          </CardContainer>
        
      </Tild>
+    
     )
 }
 

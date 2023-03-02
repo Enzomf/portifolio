@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-    width: 350px;
+    width: 100%;
     height: 420px;
-    
     padding: 1rem;
     position: relative;
     border-radius: 0.7rem;
@@ -11,9 +10,6 @@ const CardContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.06);
     overflow: hidden;
 
-
-
-    
     &:hover{
         .actions-wrapper {
             animation: in .5s ease;
@@ -36,11 +32,14 @@ const CardContainer = styled.div`
         background: radial-gradient( 800px circle at  var(--mouse-x) var(--mouse-y) , rgba(255, 255, 255, 0.06), transparent 40% );
     }
 
-    img {
+   .image-wrapper {
+  
         margin: 0 auto;
-        width: 50%;
-        
-    }
+        position: absolute;
+        width: 100%;
+        right: 0;
+        text-align: center;
+   }
 
     .actions-wrapper{
 
@@ -94,6 +93,7 @@ const CardContainer = styled.div`
             
         }
     }
+
 
 `;
 

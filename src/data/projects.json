@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id":1,
+            "name":"Sepedi Managment Software",
+            "private": true,
+            "liveUrl":"http://ncloud.dev.br:3001",
+            "imagePath":"/logo-sepedi 1.svg",
+            "about":"This software allows managers and technicians of SEPEDI (Secretariat for Persons with Disabilities and the Elderly) to manage registries of elderly and PWDs in a way that they have an overview of statistics of the public and better access to information. The system allows for registration, searching, report generation and attendance control.\nFurthermore, this software enables users to generate reports and control attendance, making it easier and more efficient to organize information and manage activities for the Secretariat.\nWith this solution, SEPEDI professionals can make more informed and accurate decisions, having a complete and intuitive tool to assist in caring for the elderly and persons with disabilities.\n",
+            "demoVideo": "",
+            "tools": ["React", "MongoDB", "TypeScript", "Node", "Express"]
+        },
+        {
+            "id":2,
+            "name":"In production",
+            "private": true,
+            "liveUrl":"http://ncloud.dev.br:3001",
+            "imagePath":"/logo-sepedi 1.svg",
+            "about":"This software allows managers and technicians of SEPEDI (Secretariat for Persons with Disabilities and the Elderly) to manage registries of elderly and PWDs in a way that they have an overview of statistics of the public and better access to information. The system allows for registration, searching, report generation and attendance control.\nFurthermore, this software enables users to generate reports and control attendance, making it easier and more efficient to organize information and manage activities for the Secretariat.\nWith this solution, SEPEDI professionals can make more informed and accurate decisions, having a complete and intuitive tool to assist in caring for the elderly and persons with disabilities.\n",
+            "demoVideo": "",
+            "tools": ["React", "MongoDB", "TypeScript", "Node", "Express"]
+        },
+        {
+            "id":3,
+            "name":"In production",
+            "private": true,
+            "liveUrl":"http://ncloud.dev.br:3001",
+            "imagePath":"/logo-sepedi 1.svg",
+            "about":"This software allows managers and technicians of SEPEDI (Secretariat for Persons with Disabilities and the Elderly) to manage registries of elderly and PWDs in a way that they have an overview of statistics of the public and better access to information. The system allows for registration, searching, report generation and attendance control.\nFurthermore, this software enables users to generate reports and control attendance, making it easier and more efficient to organize information and manage activities for the Secretariat.\nWith this solution, SEPEDI professionals can make more informed and accurate decisions, having a complete and intuitive tool to assist in caring for the elderly and persons with disabilities.\n",
+            "demoVideo": "",
+            "tools": ["React", "MongoDB", "TypeScript", "Node", "Express"]
+        },
+        {
+            "id":4,
+            "name":"In production",
+            "private": true,
+            "liveUrl":"http://ncloud.dev.br:3001",
+            "imagePath":"/logo-sepedi 1.svg",
+            "about":"This software allows managers and technicians of SEPEDI (Secretariat for Persons with Disabilities and the Elderly) to manage registries of elderly and PWDs in a way that they have an overview of statistics of the public and better access to information. The system allows for registration, searching, report generation and attendance control.\nFurthermore, this software enables users to generate reports and control attendance, making it easier and more efficient to organize information and manage activities for the Secretariat.\nWith this solution, SEPEDI professionals can make more informed and accurate decisions, having a complete and intuitive tool to assist in caring for the elderly and persons with disabilities.\n",
+            "demoVideo": "",
+            "tools": ["React", "MongoDB", "TypeScript", "Node", "Express"]
+        }
+    ]
+}

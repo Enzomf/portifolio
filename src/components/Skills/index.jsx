@@ -1,4 +1,3 @@
-import skillsImage from '../../assets/skills-image.png';
 import { SkillsContainer } from "./styles";
 
 function Skills(){
@@ -15,7 +14,7 @@ function Skills(){
                     </div>
                 </div>
 
-                <img src={skillsImage} alt="" />
+              
             </div>
 
         </SkillsContainer>

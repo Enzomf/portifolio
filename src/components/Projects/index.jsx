@@ -1,4 +1,4 @@
-import sepediImage from "../../assets/logo-sepedi 1.svg";
+import { projects } from '../../data/projects.json';
 import ProjectCard from "../ProjectCard";
 import { ProjectsContainer } from "./styled";
 
@@ -8,10 +8,13 @@ function Projects(){
             <h2 ># Projects</h2>
 
             <div id="projects-wrapper">
-                <ProjectCard image={sepediImage} repoPrivate={true} live={'http://ncloud.dev.br:3001'} />
-                <ProjectCard image={sepediImage} repoPrivate={true} live={'http://ncloud.dev.br:3001'} />
-                <ProjectCard image={sepediImage} repoPrivate={true} live={'http://ncloud.dev.br:3001'} />
-                <ProjectCard image={sepediImage} repoPrivate={true} live={'http://ncloud.dev.br:3001'} />
+
+                {
+                    projects.map(project => (
+                        <ProjectCard  image={`/portifolio/${project.imagePath}`} repoPrivate={project.private} live={project.liveUrl}  id={project.id} name={project.name}  github={project.repo}/>
+                    ))
+                }
+
             </div>
                 
         

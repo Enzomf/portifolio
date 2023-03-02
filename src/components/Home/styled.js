@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const HomeContainer = styled.section`
-  /* min-height: 90dvh;
-  max-height: 90dvh; */
+  min-height: 90dvh;
+  max-height: 90dvh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 11em;
@@ -10,6 +10,7 @@ const HomeContainer = styled.section`
   @media (max-width: 560px) {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: unset;
+    margin-top: 4em;
   }
 
   div#home-content {
@@ -49,10 +50,15 @@ const HomeContainer = styled.section`
       gap: 2em;
       margin-top: 2em;
       
+      
       svg {
         font-size: 2.3em;
-        color: ${ props => props.theme.textColor};
+        color: ${props => props.theme.textColor};
         opacity: 0.6;
+
+        @media (max-width: 560px) {
+          font-size: 1.3em;
+        }
 
         &:hover{
           color: ${props => props.theme.hightligth};

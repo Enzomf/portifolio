@@ -1,20 +1,16 @@
-import Container from "./components/Container"
-import Header from "./components/Header"
-import Home from "./components/Home"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
-
+import { Route, Routes } from 'react-router-dom';
+import ProjectDetail from './components/ProjectDetail';
+import IndexPage from './pages';
 function App() {
 
   return (
-    <Container>
-      <Header />
-      <main>
-        <Home/>
-        <Projects/>
-        <Skills/>
-      </main>
-    </Container>
+   <Routes> 
+    <Route path='/' element={<IndexPage/>}>
+      <Route path='projects/:id' element={<ProjectDetail/>}/>
+    </Route>
+
+    <Route path='*' element={<IndexPage/>} />
+   </Routes>
   )
 }
 

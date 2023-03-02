@@ -18,6 +18,7 @@ const NavBarContainer = styled.nav`
       display: flex;
       flex-direction: column;
       padding: 1em;
+      z-index: auto;
     }
   }
 
@@ -39,6 +40,8 @@ const NavBarContainer = styled.nav`
   ul.menu-open {
     left: 0;
     top: 0;
+    z-index: 999;
+
   }
 `;
 
