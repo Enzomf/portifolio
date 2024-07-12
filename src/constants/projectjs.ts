@@ -10,14 +10,11 @@ export const projects: Project[] = [
     {
         name: 'VITALFLOW',
         description: `
-            The integrated system was developed to digitize the records of elderly 
-            and disabled individuals, initially for the Department of Elderly and Disabled 
-            Persons (SEPEDI) in São Sebastião. It features functionalities for managing 
-            records and users, and generating analytical reports, significantly enhancing 
-            operational efficiency and effectiveness. The digital solution aims to streamline 
-            processes, improve data access and accuracy, and reduce the reliance on physical 
-            spaces and paper, ultimately benefiting healthcare professionals, social workers, 
-            and service beneficiaries through an intuitive and decentralized information access platform.
+            O VITALFLOW é um sistema de gestão que digitaliza os dados de pessoas idosas e com deficiência.
+            Esse sistema foi inicialmente desenvolvido pra a Secretaria da Pessoa com Deficiência e do Idoso
+            da cidade de São Sebastião. Dentre suas funcionalidades estão a gestão de prontuários, usuários e logs e
+            emissão de relatórios analiticos. Com sua utilização as organizações podem otimizar seus processos através
+            de um sistema amigável e intuitiva, imprimindo uma maior eficiência operacional.
         `,
         stack: ['next', 'node', 'docker', 'redis', 'postgreSQL', 'cloudflare R2'],
         link: '/sepedi',
@@ -26,15 +23,11 @@ export const projects: Project[] = [
     {
         name: 'CAMPUSFLOW',
         description: `
-        The CAMPUSFLOW system is designed to provide a unified platform for the 
-        integrated management of various university departments and processes. 
-        It includes core functionalities such as course information management, 
-        user authentication, and role-based access control. The system allows 
-        students to evaluate faculty and campus infrastructure, enabling them 
-        to provide feedback on technical competence, teaching quality, and facility 
-        standards. Faculty members can perform self-assessments and track their progress, 
-        while coordinators offer insights into faculty performance. Additionally, 
-        the system manages faculty contracts, ensuring comprehensive and streamlined administrative operations.
+            O CAMPUSLFOW é um sistema modular que busca centralizar e otimizar os processos de gestão academica.
+            Desenvolvido de maneira modular, o sistema conta com funcionalidades de avaliação institucional, que permite
+            os alunos a avaliarem os professores e aspéctos gerais de sua instituição. Além disso o sistema contará com um módulo 
+            para gestão de contratos, que enviará alertas sobre vencimentos e renovações de contratos, controle de carga horária e outros.
+            Atualmente o CAMPUSFLOW é utilizado pela Faculdade de Tecnologia de São Sebastião.
         `,
         stack: ['next', 'node', 'docker', 'redis', 'postgreSQL', 'microservices'],
         link: '/sepedi',
