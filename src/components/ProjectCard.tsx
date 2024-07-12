@@ -25,7 +25,7 @@ export default function ProjectCard({ link, name, stack, thumbnail, description 
       </div>
       <CardContent>
         <div className='mt-5'>
-          <VideoPlayer src={thumbnail} />
+          <VideoPlayer projectName={name} src={thumbnail} />
         </div>
       </CardContent>
     </Card>
@@ -35,10 +35,11 @@ export default function ProjectCard({ link, name, stack, thumbnail, description 
 
 interface VideoPlayerProps {
   src: string;
+  projectName: string;
 }
 
 
-function VideoPlayer({ src }: VideoPlayerProps) {
+function VideoPlayer({ src, projectName }: VideoPlayerProps) {
   return (
     <div style={{
       position: 'relative',
@@ -46,6 +47,7 @@ function VideoPlayer({ src }: VideoPlayerProps) {
       height: 0
     }}>
       <iframe src={src}
+      title={`video demonstracao projeto ${projectName}`}
         className='rounded-sm'
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
       </iframe>
