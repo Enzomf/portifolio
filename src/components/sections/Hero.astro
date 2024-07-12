@@ -1,0 +1,36 @@
+---
+import { Github, Linkedin, Mail, File } from "lucide-astro";
+import Badge from "../Badge.astro"
+---
+
+<section
+  id="home"
+  class="w-full h-[calc(100vh-80px)] col-span-8 py-40 flex flex-col gap-5 text-white"
+>
+  <div>
+    <h2 class="md:text-3xl text-2xl font-bold text-secondary mb-2">
+      👋 Hi, i'm
+    </h2>
+    <h1 class="font-bold md:text-7xl text-4xl">Enzo Morais Figueiredo.</h1>
+  </div>
+  <p class="md:text-3xl text-xl text-white/70">
+    <span class="text-white/90">
+      Fullstack Developer & IT Management student.
+    </span>
+    Driven by innovation and efficient solutions. 🚀
+  </p>
+  <div class="flex gap-4 mt-2 flex-wrap">
+    <a target="_blank" href="https://github.com/Enzomf">
+      <Badge><Github size="20px" class="text-secondary" />Github</Badge>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/enzomf/">
+      <Badge><Linkedin size="20px" class="text-secondary" /> Linkedin</Badge>
+    </a>
+    <a href="mailto:enzomfigueiredo11@gmail.com">
+      <Badge><Mail size="20px" class="text-secondary" /> E-mail</Badge>
+    </a>
+    <a href="mailto:enzomfigueiredo11@gmail.com">
+      <Badge><File size="20px" class="text-secondary" />Curriculum</Badge>
+    </a>
+  </div>
+</section>

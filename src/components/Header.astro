@@ -1,0 +1,15 @@
+---
+import Menu from "@/components/Menu.tsx";
+---
+
+<header class="w-full px-9 fixed top-0 z-50 right-0 left-0 bg-background py-[20px]">
+  <div
+    class="w-full max-w-[1512px] flex flex-row justify-between items-center mx-auto"
+  >
+    <a href="/#" class="cursor-pointer">
+      <span class="sr-only">Logo</span>
+      <img src="/logo.svg" alt="enzo's logo" width="35px" />
+    </a>
+    <Menu client:idle />
+  </div>
+</header>

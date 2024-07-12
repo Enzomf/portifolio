@@ -1,0 +1,20 @@
+---
+import Hero from "@/components/sections/Hero.astro";
+import Layout from "@/layouts/Layout.astro";
+import "@/styles/globals.css";
+import About from "@/components/sections/About.astro";
+import { Projects } from "@/components/sections/Projects";
+---
+
+<Layout title="Enzo's portifólio" >
+  <main
+    class="py-20 grid grid-cols-5 md:grid-cols-8
+    px-6
+    xl:grid-cols-12 max-w-[1512px]
+    mx-auto"
+  >
+    <Hero />
+    <About />
+    <Projects client:load />
+  </main>
+</Layout>
