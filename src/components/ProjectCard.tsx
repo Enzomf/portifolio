@@ -59,8 +59,9 @@ function ProjectCardStacks({ stacks }: { stacks: string[] }) {
   return (
     <div className='flex flex-wrap gap-3 pl-6'>
       {
-        stacks.map(item => (
+        stacks.map((item) => (
           <span
+            key={`stack-icon-${item}-project-card`}
             className="px-2 py-1 max-h-fit transition bg-foreground rounded-md text-[12px] md:text-base  gap-2  hover:bg-[#393939] text-white font-bold"
           >
             {item}

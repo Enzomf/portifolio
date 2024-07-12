@@ -19,7 +19,7 @@ export function Projects() {
               stack={stack}
               thumbnail={thumbnail}
               name={name}
-              key={name}
+              key={`project-card-${name}`}
             />
           ))
         }
