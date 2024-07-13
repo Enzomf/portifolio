@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import Badge from './Badge.astro';
+import Badge from './Badge';
 
 type Props = {
   name: string;
@@ -12,10 +12,10 @@ type Props = {
 export default function ProjectCard({ link, name, stack, thumbnail, description }: Props) {
 
   return (
-    <Card className="inter-var w-full lg:grid lg:grid-cols-2 gap-4  bg-black/20 border-gray-900">
+    <Card className="inter-var border-none w-full lg:grid lg:grid-cols-2 gap-4  bg-black/20 border-gray-900">
       <div>
         <CardHeader>
-          <CardTitle className='text-white '>{name}</CardTitle>
+          <CardTitle className='text-white '> {name}</CardTitle>
           <CardDescription className='text-white opacity-90 text-justify text-[16px]' title={description}>
             {description}
           </CardDescription>

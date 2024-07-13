@@ -2,11 +2,11 @@
 import Hero from "@/components/sections/Hero.astro";
 import Layout from "@/layouts/Layout.astro";
 import "@/styles/globals.css";
-import About from "@/components/sections/About.astro";
+import About from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
 ---
 
-<Layout title="Enzo's portifólio" >
+<Layout title="Enzo's portifólio">
   <main
     class="py-20 grid grid-cols-5 md:grid-cols-8
     px-6
@@ -14,7 +14,7 @@ import { Projects } from "@/components/sections/Projects";
     mx-auto"
   >
     <Hero />
-    <About />
+    <About client:idle />
     <Projects client:load />
   </main>
 </Layout>
